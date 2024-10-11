@@ -4,27 +4,26 @@ $texto = "Resultado";
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $cadena = $_POST['texto'];
     $codificion = $_POST['codificacion'];
+    // if ($codificion === 'md5') {
+    //     $texto = md5($cadena);
+    // }
 
-    if ($codificion === 'md5') {
-        $texto = md5($cadena);
-    }
+    // if ($codificion === 'sha1') {
+    //     $texto = sha1($cadena);
+    // }
 
-    if ($codificion === 'sha1') {
-        $texto = sha1($cadena);
-    }
+    // if ($codificion === 'sha256') {
+    //     $texto = hash('sha256', $cadena);
+    // }
 
-    if ($codificion === 'sha256') {
-        $texto = hash('sha256', $cadena);
-    }
+    // if ($codificion === 'sha512') {
+    //     $texto = hash('sha512', $cadena);
+    // }
 
-    if ($codificion === 'sha512') {
-        $texto = hash('sha512', $cadena);
-    }
-
-    if ($codificion === 'sha3') {
-        $texto = hash('sha3-256', $cadena);
-    }
-    
+    // if ($codificion === 'sha3') {
+    //     $texto = hash('sha3-256', $cadena);
+    // }
+    var_dump($_POST);
 }
 ?>
 <!DOCTYPE html>
